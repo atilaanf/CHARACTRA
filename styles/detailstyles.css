@@ -1,0 +1,104 @@
+body {
+    background: black;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid {
+    max-width: 1200px;
+}
+
+.text-muted-custom {
+    color: #adb5bd;
+    margin-bottom: 0.5rem;
+}
+
+.text-custom {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.note-item {
+    background-color: #333;
+    color: #ddd;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.note-item:hover {
+    background-color: #767779;
+    cursor: pointer;
+}
+
+h1.title {
+    font-family: 'Cormorant', serif;
+    font-weight: 500;
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h3.text-success {
+    font-size: 1.75rem;
+    color: #4caf50;
+    margin: 1rem 0;
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: #f5f5f5;
+}
+
+.perfume-info {
+    padding: 0 1.5rem;
+}
+
+.notes-container {
+    margin-top: 1.5rem;
+}
+
+.back-home-button {
+    display: inline-block;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.back-home-button:hover {
+    background-color: #222;
+    color: #fff;
+    border-color: #666;
+    scale: 1.1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    body {
+        padding: 1rem 0;
+    }
+
+    .perfume-info {
+        padding: 1.5rem 0 0 0;
+    }
+
+    h1.title {
+        font-size: 2rem;
+    }
+
+    h3.text-success {
+        font-size: 1.5rem;
+    }
+}

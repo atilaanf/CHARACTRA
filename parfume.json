@@ -1,51 +1,89 @@
 [
-    {
-      "parfumeId": 1,
-      "parfumeName": "Luna",
-      "parfumeDesc": "Soft yet profound, like whispered secrets. A comforting embrace that speaks to the gentle strength within.",
-      "notes": {
-        "top": ["Dewberry", "Coconut", "Orange"],
-        "middle": ["Magnolia", "Jasmine Sambac", "Ylang-Ylang", "Lily of the Valley"],
-        "bottom": ["Musk", "Patchouli", "Blonde Woods"]
-      },
-      "charactersitics": "Sweet, Dreamy, Musky",
-      "story": "Luna was born under a quiet night sky, where the moon whispered dreams into the wind. It’s the scent of peaceful solitude, of someone who finds strength in silence and beauty in stillness."
+  {
+    "parfumeId": 1,
+    "parfumeName": "Luna",
+    "parfumeDesc": "Soft yet profound, like whispered secrets. A comforting embrace that speaks to the gentle strength within.",
+    "notes": {
+      "top": [
+        "Dewberry",
+        "Coconut",
+        "Orange"
+      ],
+      "middle": [
+        "Magnolia",
+        "Jasmine Sambac",
+        "Ylang-Ylang",
+        "Lily of the Valley"
+      ],
+      "bottom": [
+        "Musk",
+        "Patchouli",
+        "Blonde Woods"
+      ]
     },
-    {
-      "parfumeId": 2,
-      "parfumeName": "Nara",
-      "parfumeDesc": "A radiant burst of sunshine and optimism. Nara brings a playful energy that lifts the spirit and brightens every moment.",
-      "notes": {
-        "top": ["Bergamot", "Neroli"],
-        "middle": ["Tiare Flower", "Ylang-Ylang"],
-        "bottom": ["Coconut", "Vanilla", "Guaiac Wood", "Labdanum"]
-      },
-      "charactersitics": "Fresh, Playful, Cheerful",
-      "story": "Nara is the sunrise after a storm, laughter in the morning, and a breeze that dances through fields of gold. She reminds us to find joy in the little things and face each day with an open heart."
+    "charactersitics": "Sweet, Dreamy, Musky",
+    "story": "Luna was born under a quiet night sky, where the moon whispered dreams into the wind. It’s the scent of peaceful solitude, of someone who finds strength in silence and beauty in stillness."
+  },
+  {
+    "parfumeId": 2,
+    "parfumeName": "Nara",
+    "parfumeDesc": "A radiant burst of sunshine and optimism. Nara brings a playful energy that lifts the spirit and brightens every moment.",
+    "notes": {
+      "top": [
+        "Bergamot",
+        "Neroli"
+      ],
+      "middle": [
+        "Tiare Flower",
+        "Ylang-Ylang"
+      ],
+      "bottom": [
+        "Coconut",
+        "Vanilla",
+        "Guaiac Wood",
+        "Labdanum"
+      ]
     },
-    {
-      "parfumeId": 3,
-      "parfumeName": "Rose",
-      "parfumeDesc": "A gentle embrace of affection and elegance. Rose celebrates love in its purest form, wrapping you in floral warmth.",
-      "notes": {
-        "top": ["Jasmine", "Frangipani", "Gardenia"],
-        "middle": ["Osmanthus", "African Orange Flower", "Tuberose"],
-        "bottom": ["Musk", "Patchouli"]
-      },
-      "charactersitics": "Warm, Loving, Elegant",
-      "story": "Rose grew in a garden where every petal carried a memory of love. She walks through life spreading kindness, making every moment bloom with affection and grace."
+    "charactersitics": "Fresh, Playful, Cheerful",
+    "story": "Nara is the sunrise after a storm, laughter in the morning, and a breeze that dances through fields of gold. She reminds us to find joy in the little things and face each day with an open heart."
+  },
+  {
+    "parfumeId": 3,
+    "parfumeName": "Rose",
+    "parfumeDesc": "A gentle embrace of affection and elegance. Rose celebrates love in its purest form, wrapping you in floral warmth.",
+    "notes": {
+      "top": [
+        "Jasmine",
+        "Frangipani",
+        "Gardenia"
+      ],
+      "middle": [
+        "Osmanthus",
+        "African Orange Flower",
+        "Tuberose"
+      ],
+      "bottom": [
+        "Musk",
+        "Patchouli"
+      ]
     },
-    {
-      "parfumeId": 4,
-      "parfumeName": "Raven",
-      "parfumeDesc": "A mysterious depth that commands quiet confidence. Raven is strength, wisdom, and calm intensity in a bottle.",
-      "notes": {
-        "top": ["Amber", "Madagaskar Vanilla", "Lavender"],
-        "middle": [],
-        "bottom": []
-      },
-      "charactersitics": "Bold, Musky, Warm",
-      "story": "Raven emerged from the shadows of the unknown, carrying with him the weight of stories untold. He is the scent of resilience, of someone who walks through fire and returns wiser, calmer, and unshaken."
-    }
-  ]
-  
+    "charactersitics": "Warm, Loving, Elegant",
+    "story": "Rose grew in a garden where every petal carried a memory of love. She walks through life spreading kindness, making every moment bloom with affection and grace."
+  },
+  {
+    "parfumeId": 4,
+    "parfumeName": "Raven",
+    "parfumeDesc": "A mysterious depth that commands quiet confidence. Raven is strength, wisdom, and calm intensity in a bottle.",
+    "notes": {
+      "top": [
+        "Amber",
+        "Madagaskar Vanilla",
+        "Lavender"
+      ],
+      "middle": [],
+      "bottom": []
+    },
+    "charactersitics": "Bold, Musky, Warm",
+    "story": "Raven emerged from the shadows of the unknown, carrying with him the weight of stories untold. He is the scent of resilience, of someone who walks through fire and returns wiser, calmer, and unshaken."
+  }
+]
