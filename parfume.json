@@ -1,0 +1,47 @@
+[
+    {
+      "parfumeId": 1,
+      "parfumeName": "Luna",
+      "parfumeDesc": "Soft yet profound, like whispered secrets. A comforting embrace that speaks to the gentle strength within.",
+      "notes": {
+        "top": ["Dewberry", "Coconut", "Orange"],
+        "middle": ["Magnolia", "Jasmine Sambac", "Ylang-Ylang", "Lily of the Valley"],
+        "bottom": ["Mask", "Patchouli", "Blonde Woods"]
+      },
+      "charactersitics": "Sweet, Dreamy, Musky"
+    },
+    {
+      "parfumeId": 2,
+      "parfumeName": "Nara",
+      "parfumeDesc": "A radiant burst of sunshine and optimism. Nara brings a playful energy that lifts the spirit and brightens every moment.",
+      "notes": {
+        "top": ["Bergamot", "Neroli"],
+        "middle": ["Tiare Flower", "Ylang-Ylang"],
+        "bottom": ["Coconut", "Vanilla", "Guaiac Wood", "Labdanum"]
+      },
+      "charactersitics": "Fresh, Playful, Cheerful"
+    },
+    {
+      "parfumeId": 3,
+      "parfumeName": "Rose",
+      "parfumeDesc": "A gentle embrace of affection and elegance. Rose celebrates love in its purest form, wrapping you in floral warmth.",
+      "notes": {
+        "top": ["Jasmine", "Frangipani", "Gardenia"],
+        "middle": ["Osmanthus", "African Orange Flower", "Tuberose"],
+        "bottom": ["Musk", "Patchouli"]
+      },
+      "charactersitics": "Warm, Loving, Elegant"
+    },
+    {
+      "parfumeId": 4,
+      "parfumeName": "Raven",
+      "parfumeDesc": "A mysterious depth that commands quiet confidence. Raven is strength, wisdom, and calm intensity in a bottle.",
+      "notes": {
+        "top": ["Amber", "Madagaskar Vanilla", "Lavender"],
+        "middle": [],
+        "bottom": []
+      },
+      "charactersitics": "Bold, Musky, Warm"
+    }
+  ]
+  
