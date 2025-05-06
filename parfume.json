@@ -6,9 +6,10 @@
       "notes": {
         "top": ["Dewberry", "Coconut", "Orange"],
         "middle": ["Magnolia", "Jasmine Sambac", "Ylang-Ylang", "Lily of the Valley"],
-        "bottom": ["Mask", "Patchouli", "Blonde Woods"]
+        "bottom": ["Musk", "Patchouli", "Blonde Woods"]
       },
-      "charactersitics": "Sweet, Dreamy, Musky"
+      "charactersitics": "Sweet, Dreamy, Musky",
+      "story": "Luna was born under a quiet night sky, where the moon whispered dreams into the wind. It’s the scent of peaceful solitude, of someone who finds strength in silence and beauty in stillness."
     },
     {
       "parfumeId": 2,
@@ -19,7 +20,8 @@
         "middle": ["Tiare Flower", "Ylang-Ylang"],
         "bottom": ["Coconut", "Vanilla", "Guaiac Wood", "Labdanum"]
       },
-      "charactersitics": "Fresh, Playful, Cheerful"
+      "charactersitics": "Fresh, Playful, Cheerful",
+      "story": "Nara is the sunrise after a storm, laughter in the morning, and a breeze that dances through fields of gold. She reminds us to find joy in the little things and face each day with an open heart."
     },
     {
       "parfumeId": 3,
@@ -30,7 +32,8 @@
         "middle": ["Osmanthus", "African Orange Flower", "Tuberose"],
         "bottom": ["Musk", "Patchouli"]
       },
-      "charactersitics": "Warm, Loving, Elegant"
+      "charactersitics": "Warm, Loving, Elegant",
+      "story": "Rose grew in a garden where every petal carried a memory of love. She walks through life spreading kindness, making every moment bloom with affection and grace."
     },
     {
       "parfumeId": 4,
@@ -41,7 +44,8 @@
         "middle": [],
         "bottom": []
       },
-      "charactersitics": "Bold, Musky, Warm"
+      "charactersitics": "Bold, Musky, Warm",
+      "story": "Raven emerged from the shadows of the unknown, carrying with him the weight of stories untold. He is the scent of resilience, of someone who walks through fire and returns wiser, calmer, and unshaken."
     }
   ]
   
