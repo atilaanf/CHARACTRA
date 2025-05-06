@@ -372,6 +372,16 @@
     background-color: rgba(234, 76, 137, 0.2);
     transform: scale(1.05);
   }
+  .product-visual img{
+    
+    transition: all 1s ease;
+  }
+  .product-visual:hover img{
+    transform: translateY(-10px);
+    background-color: rgba(93, 53, 135, 0.3);
+    box-shadow: 0 10px 30px rgba(93, 53, 135, 0.2);
+    transform: scale(1.4);
+  }
   
   
   /* Animations */

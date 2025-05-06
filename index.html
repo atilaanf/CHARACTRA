@@ -204,22 +204,22 @@
       <div class="container">
         <h2 class="text-center mb-5" data-animate>Visual Journey</h2>
         <div class="row g-3">
-          <div class="col-md-4" data-animate>
+          <div class="col-md-4 product-visual" data-animate>
             <div class="rounded overflow-hidden">
               <img src="assets/images/raven.jpg" alt="Charactra Raven" class="img-fluid">
             </div>
           </div>
-          <div class="col-md-8" data-animate>
+          <div class="col-md-4 product-visual" data-animate>
             <div class="rounded overflow-hidden">
               <img src="assets/images/rose.jpg" alt="Charactra Rose" class="img-fluid">
             </div>
           </div>
-          <div class="col-md-8" data-animate>
+          <div class="col-md-4 product-visual" data-animate>
             <div class="rounded overflow-hidden">
               <img src="assets/images/nara.jpg" alt="Charactra Nara" class="img-fluid">
             </div>
           </div>
-          <div class="col-md-4" data-animate>
+          <div class="col-md-4 product-visual" data-animate>
             <div class="rounded overflow-hidden">
               <img src="assets/images/luna.jpg" alt="Charactra Luna" class="img-fluid">
             </div>
@@ -300,10 +300,7 @@
         <div class="col-md-6 col-lg-3">
           <h4 class="footer-heading">Customer Service</h4>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="faq.html" class="footer-link">FAQ</a></li>
-            <li class="mb-2"><a href="shipping.html" class="footer-link">Shipping & Returns</a></li>
-            <li class="mb-2"><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
-            <li class="mb-2"><a href="terms.html" class="footer-link">Terms of Service</a></li>
+            <li class="mb-2"><a href="faq.html" class="footer-link">Hotline Number</a></li>
           </ul>
         </div>
       </div>
@@ -360,24 +357,6 @@
 
     window.addEventListener("scroll", handleScroll);
     handleScroll(); // Call once on load
-
-    // Parallax effect
-    const parallaxImage = document.getElementById("parallax-image");
-    const parallaxSection = document.getElementById("parallax-section");
-
-    if (parallaxImage && parallaxSection) {
-      window.addEventListener("scroll", () => {
-        const sectionTop = parallaxSection.getBoundingClientRect().top;
-        const scrollPosition = window.pageYOffset;
-        const windowHeight = window.innerHeight;
-        
-        if (sectionTop < windowHeight && sectionTop > -parallaxSection.offsetHeight) {
-          const parallaxOffset = (scrollPosition - (parallaxSection.offsetTop - windowHeight)) * 0.4;
-          parallaxImage.style.transform = `translateY(${parallaxOffset}px)`;
-        }
-      });
-    }
-
     // Waitlist form handling
     const waitlistForm = document.getElementById("waitlist-form");
 
