@@ -12,8 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles/styles.css">
-
-  <script defer src="/script/index.js"></script>
 </head>
 <body>
   <header class="site-header" id="site-header">
@@ -206,22 +204,22 @@
       <div class="container">
         <h2 class="text-center mb-5" data-animate>Visual Journey</h2>
         <div class="row g-3">
-          <div class="col-md-4 product-visual" data-animate>
+          <div class="col-md-4" data-animate>
             <div class="rounded overflow-hidden">
               <img src="assets/images/raven.jpg" alt="Charactra Raven" class="img-fluid">
             </div>
           </div>
-          <div class="col-md-4 product-visual" data-animate>
+          <div class="col-md-8" data-animate>
             <div class="rounded overflow-hidden">
               <img src="assets/images/rose.jpg" alt="Charactra Rose" class="img-fluid">
             </div>
           </div>
-          <div class="col-md-4 product-visual" data-animate>
+          <div class="col-md-8" data-animate>
             <div class="rounded overflow-hidden">
               <img src="assets/images/nara.jpg" alt="Charactra Nara" class="img-fluid">
             </div>
           </div>
-          <div class="col-md-4 product-visual" data-animate>
+          <div class="col-md-4" data-animate>
             <div class="rounded overflow-hidden">
               <img src="assets/images/luna.jpg" alt="Charactra Luna" class="img-fluid">
             </div>
@@ -302,7 +300,10 @@
         <div class="col-md-6 col-lg-3">
           <h4 class="footer-heading">Customer Service</h4>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="faq.html" class="footer-link">Hotline Number</a></li>
+            <li class="mb-2"><a href="faq.html" class="footer-link">FAQ</a></li>
+            <li class="mb-2"><a href="shipping.html" class="footer-link">Shipping & Returns</a></li>
+            <li class="mb-2"><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li class="mb-2"><a href="terms.html" class="footer-link">Terms of Service</a></li>
           </ul>
         </div>
       </div>
@@ -316,5 +317,101 @@
   <!-- Bootstrap JS Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   
+  <script>
+    // Set current year in footer
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById("mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener("click", function() {
+        this.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+        document.body.classList.toggle("overflow-hidden");
+      });
+    }
+
+    // Header scroll effect
+    const header = document.getElementById("site-header");
+
+    function handleScroll() {
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+
+      // Animate elements when they come into view
+      const animatedElements = document.querySelectorAll("[data-animate]");
+
+      animatedElements.forEach((el) => {
+        const elementTop = el.getBoundingClientRect().top;
+        const elementVisible = 150;
+
+        if (elementTop < window.innerHeight - elementVisible) {
+          el.classList.add("opacity-100");
+          el.style.transform = "translateY(0)";
+          el.style.opacity = "1";
+        }
+      });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Call once on load
+
+    // Parallax effect
+    const parallaxImage = document.getElementById("parallax-image");
+    const parallaxSection = document.getElementById("parallax-section");
+
+    if (parallaxImage && parallaxSection) {
+      window.addEventListener("scroll", () => {
+        const sectionTop = parallaxSection.getBoundingClientRect().top;
+        const scrollPosition = window.pageYOffset;
+        const windowHeight = window.innerHeight;
+        
+        if (sectionTop < windowHeight && sectionTop > -parallaxSection.offsetHeight) {
+          const parallaxOffset = (scrollPosition - (parallaxSection.offsetTop - windowHeight)) * 0.4;
+          parallaxImage.style.transform = `translateY(${parallaxOffset}px)`;
+        }
+      });
+    }
+
+    // Waitlist form handling
+    const waitlistForm = document.getElementById("waitlist-form");
+
+    if (waitlistForm) {
+      waitlistForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const emailInput = this.querySelector('input[type="email"]');
+        const submitButton = this.querySelector('button[type="submit"]');
+
+        if (emailInput && submitButton) {
+          // Disable form elements
+          emailInput.disabled = true;
+          submitButton.disabled = true;
+
+          // Change button text
+          const originalText = submitButton.textContent;
+          submitButton.textContent = "Subscribing...";
+
+          // Simulate form submission
+          setTimeout(() => {
+            submitButton.textContent = "Subscribed!";
+
+            // Reset form after delay
+            setTimeout(() => {
+              emailInput.disabled = false;
+              submitButton.disabled = false;
+              submitButton.textContent = originalText;
+              waitlistForm.reset();
+            }, 3000);
+          }, 1500);
+        }
+      });
+    }
+  </script>
 </body>
 </html>
