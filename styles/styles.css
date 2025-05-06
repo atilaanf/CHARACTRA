@@ -373,7 +373,6 @@
     transform: scale(1.05);
   }
   .product-visual img{
-    
     transition: all 1s ease;
   }
   .product-visual:hover img{
@@ -383,7 +382,59 @@
     transform: scale(1.4);
   }
   
+  .fixed-img {
+    flex: 0 0 120px;
+    max-width: 200px;
+    height: 100%;
+  }
+  .fixed-img img{
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .fixed-text {
+    text-wrap: wrap;
+    max-width: 400px;
+  }
+
+  .testimony-slider {
+    margin: 20px;
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  }
   
+  .testimony-slider .list {
+    display: flex;
+    gap: 30px; /* spacing between cards */
+    animation: autoRun 35s linear infinite;
+    transition: all 1s ease;
+
+  }
+  
+  .testimony-slider .card {
+    flex: 0 0 var(--width);
+    height: var(--height);
+    backdrop-filter: blur(5px);
+    transition: all 0.3 ease;
+  }
+  .card img{
+    transition: all 0.3s ease;
+
+  } 
+  @keyframes autoRun {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(calc(-1 * (var(--width) + 30px) * var(--quantity)));
+    }
+  }
+  .testimony-slider:hover .list{
+    animation-play-state: paused!important;
+  }
   /* Animations */
   @keyframes fadeIn {
     from {
