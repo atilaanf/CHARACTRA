@@ -1,3 +1,72 @@
+//make card
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    // Fetch perfume data
+    const response = await fetch('parfume.json');
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const perfumes = await response.json();
+
+    // Get the product highlights container
+    const highlightsSection = document.querySelector('.perfumes-main-container');
+    if (!highlightsSection) return;
+
+    // Clear existing content (if any)
+    highlightsSection.innerHTML = '';
+
+    // Create cards for each perfume
+    perfumes.forEach(perfume => {
+      const cardCol = document.createElement('div');
+      cardCol.className = 'col-md-6 col-lg-3';
+      cardCol.setAttribute('data-animate', '');
+
+      cardCol.innerHTML = `
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="${perfume.imageSrc}" alt="${perfume.parfumeName}">
+                            <div class="product-overlay"></div>
+                            <div class="product-hover">
+                                <span>Discover</span>
+                            </div>
+                            <h3 class="product-name">${perfume.parfumeName}</h3>
+                        </div>
+                        <div class="p-3">
+                            <p class="product-description">${perfume.parfumeDesc}</p>
+                            <div class="mb-3">
+                                <h4 class="small text-uppercase text-primary mb-2">Notes</h4>
+                                <div class="note-tags">
+                                    ${perfume.notes.top.slice(0, 2).map(note =>
+        `<span class="note-tag">${note}</span>`
+      ).join('')}
+                                    ${perfume.notes.middle.slice(0, 2).map(note =>
+        `<span class="note-tag">${note}</span>`
+      ).join('')}
+                                </div>
+                            </div>
+                            <a href="detailperfume.html?id=${perfume.parfumeId}" class="btn btn-outline-custom">Explore</a>
+                        </div>
+                    </div>
+                `;
+
+      highlightsSection.appendChild(cardCol);
+    });
+
+  } catch (error) {
+    console.error("Error loading perfumes:", error);
+    // Optionally show an error message to users
+    const errorElement = document.createElement('div');
+    errorElement.className = 'alert alert-danger text-center';
+    errorElement.textContent = 'Failed to load products. Please try again later.';
+    document.querySelector('.container').prepend(errorElement);
+  }
+});
+
+
+
+
+
+
+
+
 // Set current year in footer
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
@@ -6,7 +75,7 @@ const menuToggle = document.getElementById("mobile-menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 
 if (menuToggle && mobileMenu) {
-  menuToggle.addEventListener("click", function() {
+  menuToggle.addEventListener("click", function () {
     this.classList.toggle("active");
     mobileMenu.classList.toggle("active");
     document.body.classList.toggle("overflow-hidden");
@@ -44,7 +113,7 @@ handleScroll(); // Call once on load
 const waitlistForm = document.getElementById("waitlist-form");
 
 if (waitlistForm) {
-  waitlistForm.addEventListener("submit", function(e) {
+  waitlistForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const emailInput = this.querySelector('input[type="email"]');

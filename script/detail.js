@@ -39,8 +39,8 @@ function initDetailPage() {
         ).join('') || '';
     });
     //characteristics
-    const charsContainer = document.querySelector('.characteristics');
-    charsContainer.innerHTML = thisPerfumeperfume.charactersitics
+    const charsContainer = document.querySelector('.charactersitics');
+    charsContainer.innerHTML = thisPerfume.charactersitics
         ? `<h5 class="d-inline me-2">Characteristics:</h5>${thisPerfume.charactersitics.split(', ').map(c =>
             `<span class="badge bg-dark text-white me-1 mb-1">${c}</span>`
         ).join('')
