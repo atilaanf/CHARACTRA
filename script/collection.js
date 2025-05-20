@@ -1,16 +1,3 @@
-// Mobile menu toggle
-const menuToggle = document.getElementById("mobile-menu-toggle");
-const mobileMenu = document.getElementById("mobile-menu");
-
-if (menuToggle && mobileMenu) {
-  menuToggle.addEventListener("click", function () {
-    this.classList.toggle("active");
-    mobileMenu.classList.toggle("active");
-    document.body.classList.toggle("overflow-hidden");
-  });
-}
-
-
 
 //parfume local storage
 let perfumes = [];
@@ -20,7 +7,7 @@ fetch('/parfume.json')
   .then(response => response.json())
   .then(data => {
     perfumes = data;
-    console.log(perfumes);
+  
 
     initPage()
   })
@@ -35,6 +22,7 @@ function initPage() {
   perfumes.forEach(item => {
     container.appendChild(generateCard(item));
   });
+
 
   // Header scroll effect
   const header = document.getElementById("site-header");
