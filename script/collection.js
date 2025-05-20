@@ -10,6 +10,8 @@ if (menuToggle && mobileMenu) {
   });
 }
 
+
+
 //parfume local storage
 let perfumes = [];
 
@@ -33,6 +35,34 @@ fetch('/parfume.json')
     perfumes.forEach(item => {
       container.appendChild(generateCard(item));
     });
+
+    // Header scroll effect
+    const header = document.getElementById("site-header");
+
+    function handleScroll() {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      
+        // Animate elements when they come into view
+        const animatedElements = document.querySelectorAll("[data-animate]");
+      
+        animatedElements.forEach((el) => {
+          const elementTop = el.getBoundingClientRect().top;
+          const elementVisible = 150;
+      
+          if (elementTop < window.innerHeight - elementVisible) {
+            el.classList.add("opacity-100");
+            el.style.transform = "translateY(0)";
+            el.style.opacity = "1";
+          }
+        });
+      }
+      
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
 
   }
 
