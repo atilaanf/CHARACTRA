@@ -11,7 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="aboutus.css">
+  <link rel="stylesheet" href="/styles/aboutus.css">
+
+  <script defer src="/script/aboutus.js"></script>
 </head>
 <body>
   <header class="site-header" id="site-header">
@@ -24,8 +26,7 @@
             <li class="me-4"><a href="index.html" class="nav-link">Home</a></li>
             <li class="me-4"><a href="collection.html" class="nav-link">Collection</a></li>
             <li class="me-4"><a href="aboutus.html" class="nav-link active">About</a></li>
-            <li class="me-4"><a href="journal.html" class="nav-link">Journal</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          
           </ul>
         </nav>
         
@@ -51,286 +52,206 @@
   </div>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-image">
-        <img src="assets/images/luna.jpg" alt="Charactra perfume">
-        <div class="overlay"></div>
-      </div>
-      <div class="hero-content">
-        <h1 class="animate-fade-in">CHARACTRA</h1>
-        <p class="animate-fade-in delay-1">Scent of Character. The Fragrance of You.</p>
-        <div class="animate-fade-in delay-2">
-          <a href="collection.html" class="btn btn-primary-custom btn-lg">
-            Discover Your Scent
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-          </a>
-        </div>
-        <div class="scroll-indicator animate-fade-in delay-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
-        </div>
-      </div>
-    </section>
+     <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="about-hero-content">
+        <h1>Our Story</h1>
+        <p class="tagline">Crafting Scents That Tell Your Story</p>
+        <div class="hero-decoration"></div>
+    </div>
+</section>
+</section>
 
-    <!-- About Section -->
-    <section class="py-5 bg-dark-custom">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <h2 class="mb-4" data-animate>The Essence of Identity</h2>
-            <p class="text-muted-custom mb-4" data-animate>Charactra is more than a fragrance. It's an olfactory identity.</p>
-            <p class="text-muted-custom" data-animate>Each scent is meticulously crafted to evoke not just a mood, but a persona—a character that resonates with your innermost self. Our fragrances don't merely complement your presence; they articulate who you are in a language more primal than words.</p>
-          </div>
+   <!-- Brand Journey Section -->
+<section class="brand-story">
+    <div class="container">
+        <div class="section-header">
+            <h2>The Essence of Charactra</h2>
+            <div class="section-decoration"></div>
         </div>
-      </div>
-    </section>
-
-    <!-- Product Highlights -->
-    <section class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4" data-animate>Signature Scents</h2>
-        <p class="text-center text-muted-custom mb-5 mx-auto" style="max-width: 800px;" data-animate>Discover the collection that defines characters through scent.</p>
         
-        <div class="row g-4 perfumes-main-container" id="perfumes-container">
-          <!-- <div class="col-md-6 col-lg-3" data-animate>
-            <div class="product-card h-100">
-              <div class="product-image">
-                <img src="assets/images/raven.jpg" alt="RAVEN">
-                <div class="product-overlay"></div>
-                <div class="product-hover">
-                  <span>Discover</span>
-                </div>
-                <h3 class="product-name">RAVEN</h3>
-              </div>
-              <div class="p-3">
-                <p class="product-description">A mysterious blend that reveals different facets throughout the day, much like the complexity of human nature.</p>
-                <div class="mb-3">
-                  <h4 class="small text-uppercase text-primary mb-2">Notes</h4>
-                  <div class="note-tags">
-                    <span class="note-tag">Amber</span>
-                    <span class="note-tag">Sandalwood</span>
-                    <span class="note-tag">Black Pepper</span>
-                    <span class="note-tag">Vanilla</span>
-                  </div>
-                </div>
-                <a href="collection.html" class="btn btn-outline-custom">Explore</a>
-              </div>
+        <div class="story-content">
+            <div class="story-image">
+                <img src="/assets/images/Hitam@4x.png" alt="Charactra Founder">
+               
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-animate>
-            <div class="product-card h-100">
-              <div class="product-image">
-                <img src="assets/images/rose.jpg" alt="ROSE">
-                <div class="product-overlay"></div>
-                <div class="product-hover">
-                  <span>Discover</span>
-                </div>
-                <h3 class="product-name">ROSE</h3>
-              </div>
-              <div class="p-3">
-                <p class="product-description">Bright and captivating, this scent illuminates your presence with a radiant character that's impossible to ignore.</p>
-                <div class="mb-3">
-                  <h4 class="small text-uppercase text-primary mb-2">Notes</h4>
-                  <div class="note-tags">
-                    <span class="note-tag">Bergamot</span>
-                    <span class="note-tag">Jasmine</span>
-                    <span class="note-tag">Cedar</span>
-                    <span class="note-tag">White Musk</span>
-                  </div>
-                </div>
-                <a href="collection.html" class="btn btn-outline-custom">Explore</a>
-              </div>
+            
+            <div class="story-text">
+                <p>Charactra was born from a passion to redefine the art of perfumery. Our journey began in a small atelier in Paris, where our founder Alexandra Dumont, inspired by her travels and deep appreciation for artisanal craftsmanship, set out to create fragrances that transcend the ordinary.</p>
+                
+                <p>What started as a personal quest to capture memories and emotions in scent has evolved into a celebrated brand known for its distinctive approach to perfume creation. Each Charactra fragrance tells a story—a narrative of places, moments, and emotions bottled into exquisite aromas that evolve with you.</p>
+                
+                <p>Today, we continue to push the boundaries of olfactory art, blending time-honored techniques with innovative approaches to create perfumes that are as unique as the individuals who wear them.</p>
+                
+                <blockquote>
+                    "Perfume is the art of making memories tangible. At Charactra, we don't just create fragrances; we craft experiences that linger in the heart and mind."
+                    <cite>— Atila Alfayathar, Founder</cite>
+                </blockquote>
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-animate>
-            <div class="product-card h-100">
-              <div class="product-image">
-                <img src="assets/images/nara.jpg" alt="NARA">
-                <div class="product-overlay"></div>
-                <div class="product-hover">
-                  <span>Discover</span>
-                </div>
-                <h3 class="product-name">NARA</h3>
-              </div>
-              <div class="p-3">
-                <p class="product-description">Vibrant and energetic, this fragrance brings warmth and joy to your day with its sunny disposition.</p>
-                <div class="mb-3">
-                  <h4 class="small text-uppercase text-primary mb-2">Notes</h4>
-                  <div class="note-tags">
-                    <span class="note-tag">Citrus</span>
-                    <span class="note-tag">Amber</span>
-                    <span class="note-tag">Honey</span>
-                    <span class="note-tag">Neroli</span>
-                  </div>
-                </div>
-                <a href="collection.html" class="btn btn-outline-custom">Explore</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-animate>
-            <div class="product-card h-100">
-              <div class="product-image">
-                <img src="assets/images/luna.jpg" alt="LUNA">
-                <div class="product-overlay"></div>
-                <div class="product-hover">
-                  <span>Discover</span>
-                </div>
-                <h3 class="product-name">LUNA</h3>
-              </div>
-              <div class="p-3">
-                <p class="product-description">desc.</p>
-                <div class="mb-3">
-                  <h4 class="small text-uppercase text-primary mb-2">Notes</h4>
-                  <div class="note-tags">
-                    <span class="note-tag">Iris</span>
-                    <span class="note-tag">Violet</span>
-                    <span class="note-tag">Patchouli</span>
-                    <span class="note-tag">Tonka Bean</span>
-                  </div>
-                </div>
-                <a href="collection.html" class="btn btn-outline-custom">Explore</a>
-              </div>
-            </div>
-          </div> -->
         </div>
-      </div>
-    </section>
-
-    <!-- Visual Showcase -->
-    <section class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5" data-animate>Visual Journey</h2>
-        <div class="row g-3">
-          <div class="col-md-4" data-animate>
-            <div class="rounded overflow-hidden">
-              <img src="assets/images/raven.jpg" alt="Charactra Raven" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-md-8" data-animate>
-            <div class="rounded overflow-hidden">
-              <img src="assets/images/rose.jpg" alt="Charactra Rose" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-md-8" data-animate>
-            <div class="rounded overflow-hidden">
-              <img src="assets/images/nara.jpg" alt="Charactra Nara" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-md-4" data-animate>
-            <div class="rounded overflow-hidden">
-              <img src="assets/images/luna.jpg" alt="Charactra Luna" class="img-fluid">
-            </div>
-          </div>
+    </div>
+</section>
+    <!--  Journey  Express Section -->
+<section class="journey-expression">
+    <div class="container">
+        <div class="section-header">
+            <h2>Journey of Expression</h2>
+            <p class="section-subtitle">Our signature four-phase process that transforms inspiration into unforgettable fragrances</p>
+            <div class="section-decoration"></div>
         </div>
-      </div>
-    </section>
-
-    <!-- Testimony -->
-    <section>
-      <div class="container">
-        <h2 class="text-center mb-5" data-animate>Testimony</h2>
-
-        <div class="testimony-slider d-flex flex-row" style="--width:540px; --height: 200px; --quantity:6;">
-          <div class="list">
-            <div class="card" >
-              <div class="row g-0">
-                <div class="fixed-img">
-                  <img src="/assets/images/testi1.jpg" class="img-fluid rounded-start" alt="Amadeus Alfons Wijaya">
-                </div>
-                <div class="fixed-text">
-                  <div class="card-body">
-                    <h5 class="card-title">Janice Audrey</h5>
-                    <p class="card-text">Luna by Charactra has this soft yet magnetic scent. It’s my daily confidence boost—subtle, but unforgettable.</p>
-                    <p class="card-text"><small class="text-body-secondary">University Student</small></p>
-                  </div>
-                </div>
-              </div>
+        
+        <div class="journey-content">
+            <div class="journey-image">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7jKL392E7ZdkVOzGgssqcsaRrqiV67.png" alt="Journey of Expression - Four phases of perfume creation: Colors, Smells, Looks, and Aura">
             </div>
-          
-            <div class="card">
-              <div class="row g-0" >
-                <div class="fixed-img">
-                  <img src="/assets/images/testi2.jpg" class="img-fluid rounded-start" alt="Selina Hartono">
+            
+            <div class="journey-phases">
+                <div class="phase" data-phase="1">
+                    <div class="phase-number">1</div>
+                    <div class="phase-content">
+                        <h3>Defining Colors</h3>
+                        <p>We begin by exploring the visual palette that inspires each fragrance. Colors evoke emotions and set the foundation for our creative process. Our perfumers translate these visual inspirations into aromatic concepts.</p>
+                    </div>
                 </div>
-                <div class="fixed-text">
-                  <div class="card-body">
-                    <h5 class="card-title">Felix Hartono</h5>
-                    <p class="card-text">Nara smells like adventure in a bottle. It's fresh, spicy, and makes me feel bold wherever I go.</p>
-                    <p class="card-text"><small class="text-body-secondary">Career Gen-Z</small></p>
-                  </div>
+                
+                <div class="phase" data-phase="2">
+                    <div class="phase-number">2</div>
+                    <div class="phase-content">
+                        <h3>Defining Smells</h3>
+                        <p>Here, we identify and source the finest ingredients from around the world. Our master perfumers blend top, middle, and base notes to create a harmonious composition that evolves beautifully on the skin.</p>
+                    </div>
                 </div>
-              </div>
+                
+                <div class="phase" data-phase="3">
+                    <div class="phase-number">3</div>
+                    <div class="phase-content">
+                        <h3>Defining Looks</h3>
+                        <p>The visual identity of each fragrance comes to life. We design bottles and packaging that reflect the essence of the scent within, creating a complete sensory experience that begins before the first spray.</p>
+                    </div>
+                </div>
+                
+                <div class="phase" data-phase="4">
+                    <div class="phase-number">4</div>
+                    <div class="phase-content">
+                        <h3>Defining Aura</h3>
+                        <p>The final phase captures the intangible essence—the aura—that makes each Charactra fragrance unique. This is where science meets soul, creating perfumes that become an extension of your identity.</p>
+                    </div>
+                </div>
             </div>
-          
-            <div class="card">
-              <div class="row g-0" >
-                <div class="fixed-img">
-                  <img src="/assets/images/testi3.jpg" class="img-fluid rounded-start" alt="Jonathan Pranata">
-                </div>
-                <div class="fixed-text">
-                  <div class="card-body">
-                    <h5 class="card-title">Bella Keira</h5>
-                    <p class="card-text">Raven has this mysterious depth to it. Dark, woody, and sophisticated—perfect for nights out or important meetings.</p>
-                    <p class="card-text"><small class="text-body-secondary">University Student</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-            <div class="card">
-              <div class="row g-0" >
-                <div class="fixed-img">
-                  <img src="/assets/images/testi4.jpg" class="img-fluid rounded-start" alt="Carissa Yuwono">
-                </div>
-                <div class="fixed-text">
-                  <div class="card-body">
-                    <h5 class="card-title">Jacob Adrian</h5>
-                    <p class="card-text">Rose is everything I want in a perfume—romantic, floral, and timeless. It lingers beautifully all day.</p>
-                    <p class="card-text"><small class="text-body-secondary">Millennial Professional</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-            <div class="card">
-              <div class="row g-0" >
-                <div class="fixed-img">
-                  <img src="/assets/images/testi5.jpg" class="img-fluid rounded-start" alt="Felix Adrian">
-                </div>
-                <div class="fixed-text">
-                  <div class="card-body">
-                    <h5 class="card-title">Carissa Arista</h5>
-                    <p class="card-text">Nara gives me this energetic, clean vibe. It’s the only scent I wear to work—everyone asks what it is.</p>
-                    <p class="card-text"><small class="text-body-secondary">Active High Schooler</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-            <div class="card">
-              <div class="row g-0">
-                <div class="fixed-img">
-                  <img src="/assets/images/testi6.jpg" class="img-fluid rounded-start" alt="Livia Tan">
-                </div>
-                <div class="fixed-text">
-                  <div class="card-body">
-                    <h5 class="card-title">Livia Tan</h5>
-                    <p class="card-text">There’s something hypnotic about Raven. It's edgy, elegant, and makes me feel powerful every time I wear it.</p>
-                    <p class="card-text"><small class="text-body-secondary">Gen Alpha Athlete</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-         
         </div>
-      </div>
-    </section>
+    </div>
+</section>
+   
+    <!--  Value Section -->
+<section class="our-values">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Values</h2>
+            <p class="section-subtitle">The principles that guide our craft</p>
+            <div class="section-decoration"></div>
+        </div>
+        
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <h3>Artisanal Craftsmanship</h3>
+                <p>Every Charactra fragrance is crafted with meticulous attention to detail, honoring traditional perfumery while embracing modern techniques.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+                </div>
+                <h3>Sustainable Sourcing</h3>
+                <p>We responsibly source ingredients, supporting ethical farming practices and environmental conservation efforts worldwide.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
+                </div>
+                <h3>Individual Expression</h3>
+                <p>We celebrate uniqueness and create fragrances that empower you to express your authentic self through scent.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-5"></path><path d="M9 7V2"></path><path d="M15 7V2"></path><path d="M6 13V8a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3Z"></path></svg>
+                </div>
+                <h3>Sensory Innovation</h3>
+                <p>We continuously explore new frontiers in olfactory experiences, pushing the boundaries of what perfume can be.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-
+<!-- 
+team sectiona -->
+<section class="our-team">
+    <div class="container">
+        <div class="section-header">
+            <h2>Meet Our Team</h2>
+            <p class="section-subtitle">The passionate artisans behind Charactra's distinctive fragrances</p>
+            <div class="section-decoration"></div>
+        </div>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="path-to-team-member-1.jpg" alt="Alexandra Dumont">
+                    <div class="member-social">
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                    </div>
+                </div>
+                <h3>Alexandra Dumont</h3>
+                <p class="member-title">Founder & Creative Director</p>
+                <p class="member-bio">With over 15 years in luxury perfumery, Alexandra brings her visionary approach to every Charactra creation.</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="path-to-team-member-2.jpg" alt="Marco Bianchi">
+                    <div class="member-social">
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                    </div>
+                </div>
+                <h3>Marco Bianchi</h3>
+                <p class="member-title">Master Perfumer</p>
+                <p class="member-bio">Trained in Grasse, Marco combines classical techniques with bold innovation to craft our signature scents.</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="path-to-team-member-3.jpg" alt="Sophia Chen">
+                    <div class="member-social">
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                    </div>
+                </div>
+                <h3>Sophia Chen</h3>
+                <p class="member-title">Ingredient Specialist</p>
+                <p class="member-bio">Sophia travels the world to source the finest and most unique ingredients for our perfumes.</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="path-to-team-member-4.jpg" alt="Jean-Paul Moreau">
+                    <div class="member-social">
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                    </div>
+                </div>
+                <h3>Jean-Paul Moreau</h3>
+                <p class="member-title">Packaging Designer</p>
+                <p class="member-bio">Jean-Paul creates the visual identity for each fragrance, ensuring every detail reflects the essence within.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Call to Action -->
     <section class="py-5 bg-dark-accent">
@@ -483,40 +404,6 @@
       });
     }
 
-    // Waitlist form handling
-    const waitlistForm = document.getElementById("waitlist-form");
-
-    if (waitlistForm) {
-      waitlistForm.addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        const emailInput = this.querySelector('input[type="email"]');
-        const submitButton = this.querySelector('button[type="submit"]');
-
-        if (emailInput && submitButton) {
-          // Disable form elements
-          emailInput.disabled = true;
-          submitButton.disabled = true;
-
-          // Change button text
-          const originalText = submitButton.textContent;
-          submitButton.textContent = "Subscribing...";
-
-          // Simulate form submission
-          setTimeout(() => {
-            submitButton.textContent = "Subscribed!";
-
-            // Reset form after delay
-            setTimeout(() => {
-              emailInput.disabled = false;
-              submitButton.disabled = false;
-              submitButton.textContent = originalText;
-              waitlistForm.reset();
-            }, 3000);
-          }, 1500);
-        }
-      });
-    }
-  </script>
+    </script>
 </body>
 </html>
