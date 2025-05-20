@@ -246,8 +246,11 @@
   }
 
   /* Product Cards */
+  .collection{
+    margin: 20px;
+  }
   .product-card {
-    background-color: rgba(61, 59, 109, 0.3);
+    background-color: rgba(27, 25, 77, 0.3);
     border-radius: 0.5rem;
     overflow: hidden;
     transition: all 0.3s ease;
