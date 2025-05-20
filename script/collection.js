@@ -96,7 +96,7 @@ fetch('/parfume.json')
             .join('')}
         </div>
       </div>
-      <a href="collection.html" class="btn btn-outline-custom">Explore</a>
+      <a href="detailperfume.html" class="btn btn-outline-custom">Explore</a>
     `;
   
     card.appendChild(imgWrap);
