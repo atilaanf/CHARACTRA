@@ -34,19 +34,6 @@ function initPage() {
       header.classList.remove("scrolled");
     }
 
-    // Animate elements when they come into view
-    const animatedElements = document.querySelectorAll("[data-animate]");
-
-    animatedElements.forEach((el) => {
-      const elementTop = el.getBoundingClientRect().top;
-      const elementVisible = 150;
-
-      if (elementTop < window.innerHeight - elementVisible) {
-        el.classList.add("opacity-100");
-        el.style.transform = "translateY(0)";
-        el.style.opacity = "1";
-      }
-    });
   }
 
   window.addEventListener("scroll", handleScroll);

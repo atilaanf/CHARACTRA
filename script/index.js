@@ -82,6 +82,7 @@ if (menuToggle && mobileMenu) {
   });
 }
 
+
 // Header scroll effect
 const header = document.getElementById("site-header");
 
