@@ -1,3 +1,6 @@
+#testimony-header{
+    color: #ffffff;
+}
 #testimony-section{
     width: 100%;
     display: flex;
@@ -10,6 +13,7 @@
     margin: 30px;
     transition: all .2s ease-in-out;
     display: flex;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .testimony-list > .card:hover{
@@ -39,11 +43,11 @@
         
         h1 {
             font-family: 'Playfair Display', serif;
-            color: #6a4c93;
+            color: #ffffff;
             margin-bottom: 10px;
             text-align: center;
             font-size: 2.2rem;
-            font-weight: 600;
+            
         }
         
         .subtitle {
