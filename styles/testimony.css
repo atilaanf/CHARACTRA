@@ -1,0 +1,12 @@
+.testimony-list{
+    gap: 30px; /* spacing between cards */
+    margin: 30px;
+}
+.testimony-list > .card{
+    margin: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.testimony-list > .card:hover{
+    transform: scale(1.06);
+}
