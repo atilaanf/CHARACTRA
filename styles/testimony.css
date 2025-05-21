@@ -1,12 +1,184 @@
-.testimony-list{
-    gap: 30px; /* spacing between cards */
-    margin: 30px;
+#testimony-section{
+    width: 100%;
+    display: flex;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:   center;
 }
 .testimony-list > .card{
     margin: 30px;
     transition: all .2s ease-in-out;
+    display: flex;
 }
 
 .testimony-list > .card:hover{
     transform: scale(1.06);
 }
+.testimony-list > .card-text{
+    width: 100%;
+}
+.fixed-text {
+    text-wrap: wrap;
+    max-width: 400px;
+}
+
+
+
+
+
+  /* form section */
+        .container-testimony {
+            max-width: 80%;
+            margin: 120px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #6a4c93;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #777;
+            margin-bottom: 30px;
+            font-size: 1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #6a4c93;
+            box-shadow: 0 0 0 3px rgba(106, 76, 147, 0.2);
+        }
+        .success input{
+            border-color: #09c372;
+        }
+        .success textarea{
+            border-color: #09c372;
+        }
+        .error input{
+            border-color: #ff3860;
+        }
+        .error textarea{
+            border-color: #ff3860;
+        }
+        .error {
+            color: red;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #4cc9f0, #6a4c93);
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 15px rgba(106, 76, 147, 0.3);
+        }
+        
+        .address {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+        
+        .address h3 {
+            font-family: 'Playfair Display', serif;
+            color: #6a4c93;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .address p {
+            color: #777;
+            line-height: 1.7;
+        }
+        
+        .success-message {
+            display: none;
+            background-color: rgba(76, 201, 240, 0.1);
+            color: #4cc9f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(76, 201, 240, 0.3);
+            text-align: center;
+        }
+        
+        .form-decoration {
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, #4cc9f0, #6a4c93);
+            margin: 0 auto 30px;
+        }
+
+
+
+  
+@media (max-width: 768px) {
+  .fixed-img {
+    min-width: 200px;
+    height: 100%;
+  }
+  .fixed-img > .img-fluid{
+    min-width: 200px;
+    align-self: center;
+    border-radius: 20px;
+  }
+
+  .row{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  }
+  

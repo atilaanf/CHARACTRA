@@ -19,12 +19,40 @@
   <header class="site-header" id="site-header">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
-        <a href="index.html" class="logo" style="font-size: 20px;">&#8592; Back to home</a>
-    
+        <a href="index.html" class="logo">CHARACTRA</a>
+        
+        <nav class="d-none d-md-block">
+          <ul class="list-unstyled d-flex mb-0">
+            <li class="me-4"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="me-4"><a href="collection.html" class="nav-link">Collection</a></li>
+            <li class="me-4"><a href="aboutus.html" class="nav-link">About</a></li>
+            <li class="me-4"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="me-4"><a href="testimony.html" class="nav-link active">Testimony</a></li>
+            <li class="me-4"><a href="csr.html" class="nav-link">CSR</a></li>
+          </ul>
+        </nav>
+        
+        <div class="mobile-menu-toggle d-md-none" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </header>
 
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="text-center">
+      <ul class="list-unstyled">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="collection.html" class="nav-link">Collection</a></li>
+            <li><a href="aboutus.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="testimony.html" class="nav-link">Testimony</a></li>
+            <li><a href="csr.html" class="nav-link">CSR</a></li>
+      </ul>
+    </nav>
+  </div>
 
 
 <main>
@@ -48,11 +76,11 @@
       </div>
     </section>
 
-        <div class="testimony-list" id="testimony-section">
+        <div class="testimony-list d-flex" id="testimony-section" >
             <div class="card animate-fade-in" >
               <div class="row g-0">
                 <div class="fixed-img">
-                  <img src="/assets/images/testi1.jpg" class="img-fluid rounded-start" alt="Amadeus Alfons Wijaya">
+                  <img src="/assets/images/testi1.jpg" class="img-fluid rounded" alt="Amadeus Alfons Wijaya">
                 </div>
                 <div class="fixed-text">
                   <div class="card-body">
@@ -67,7 +95,7 @@
             <div class="card animate-fade-in">
               <div class="row g-0" >
                 <div class="fixed-img">
-                  <img src="/assets/images/testi2.jpg" class="img-fluid rounded-start" alt="Selina Hartono">
+                  <img src="/assets/images/testi2.jpg" class="img-fluid rounded" alt="Selina Hartono">
                 </div>
                 <div class="fixed-text">
                   <div class="card-body">
@@ -82,7 +110,7 @@
             <div class="card animate-fade-in">
               <div class="row g-0" >
                 <div class="fixed-img">
-                  <img src="/assets/images/testi3.jpg" class="img-fluid rounded-start" alt="Jonathan Pranata">
+                  <img src="/assets/images/testi3.jpg" class="img-fluid rounded" alt="Jonathan Pranata">
                 </div>
                 <div class="fixed-text">
                   <div class="card-body">
@@ -97,7 +125,7 @@
             <div class="card animate-fade-in">
               <div class="row g-0" >
                 <div class="fixed-img">
-                  <img src="/assets/images/testi4.jpg" class="img-fluid rounded-start" alt="Carissa Yuwono">
+                  <img src="/assets/images/testi4.jpg" class="img-fluid rounded" alt="Carissa Yuwono">
                 </div>
                 <div class="fixed-text">
                   <div class="card-body">
@@ -112,7 +140,7 @@
             <div class="card animate-fade-in">
               <div class="row g-0" >
                 <div class="fixed-img">
-                  <img src="/assets/images/testi5.jpg" class="img-fluid rounded-start" alt="Felix Adrian">
+                  <img src="/assets/images/testi5.jpg" class="img-fluid rounded" alt="Felix Adrian">
                 </div>
                 <div class="fixed-text">
                   <div class="card-body">
@@ -127,7 +155,7 @@
             <div class="card animate-fade-in" >
               <div class="row g-0">
                 <div class="fixed-img">
-                  <img src="/assets/images/testi6.jpg" class="img-fluid rounded-start" alt="Livia Tan">
+                  <img src="/assets/images/testi6.jpg" class="img-fluid rounded" alt="Livia Tan">
                 </div>
                 <div class="fixed-text">
                   <div class="card-body">
@@ -138,6 +166,32 @@
                 </div>
               </div>
             </div>
+        </div>
+
+        <div class="container-testimony">
+            
+        <form id="testimony-form" action="https://formspree.io/f/mldbvprb" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" >
+                <div class="error"></div>
+
+            </div>
+            
+            <div class="form-group">
+                <label for="status">Your Status</label>
+                <input type="text" id="status" name="status" >
+                <div class="error"></div>
+            </div>
+        
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" ></textarea>
+                <div class="error"></div>
+            </div>
+            
+            <button type="submit">Send Message</button>
+        </form>
         </div>
 </main>
 
@@ -194,6 +248,8 @@
   <!-- Bootstrap JS Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/script/index.js"></script>
+  <script src="/script/testimony.js"></script>
+
   
 </body>
 </html>
